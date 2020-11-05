@@ -20,5 +20,4 @@ spec:
           image: richardchesterwood/k8s-fleetman-webapp-angular:release0-5
 
   # 1 Pod should exist at all times.
-  replicas: 1
-
+  replicas: 2
