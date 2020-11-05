@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
   name: queue
 
@@ -20,4 +20,4 @@ spec:
           image: richardchesterwood/k8s-fleetman-queue:release1
 
   # 1 Pod should exist at all times.
-  replicas: 1
+  replicas: 2
