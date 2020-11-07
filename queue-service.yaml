@@ -9,11 +9,14 @@ spec:
     app: queue
 
   ports:
+    # This port is used to expose the admin console
     - name: http
       port: 8161
       targetPort: 8161
       nodePort: 30010
 
-
+    # This port is used to send/receive messages, used internally in the cluster
+    - name: endpoint
+      port: 61616
 
   type: NodePort
