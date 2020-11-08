@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: fleetman-queue
-          image: richardchesterwood/k8s-fleetman-queue:release1
+          image: richardchesterwood/k8s-fleetman-queue:release2
 
   # 1 instance should exist at all times.
   replicas: 1
