@@ -18,6 +18,9 @@ spec:
       containers:
         - name: webapp
           image: richardchesterwood/k8s-fleetman-webapp-angular:release0-5
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: production-microservice
 
   # 2 Pod should exist at all times.
-  replicas: 2
+  replicas: 1
